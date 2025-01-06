@@ -1,0 +1,121 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>HarvestTracker</title>
+    <link rel="stylesheet" href="./assets/css/add-data.css">
+    <script src="https://unpkg.com/lucide@latest"></script>
+</head>
+<body>
+    <!-- Navigation Bar -->
+    <nav>
+        <div class="container">
+            <div class="nav-content">
+                <div class="logo-section">
+                    <img  class="logo-icon" src="./images/logo2.png" alt="" srcset="">
+                    <span class="logo-text">AgMe</span>
+                </div>
+                <button class="home-button" onclick="window.location.href='index.html'">
+                    <i data-lucide="home"></i>
+                    <span>Home</span>
+                </button>
+            </div>
+        </div>
+    </nav>
+
+    <!-- Main Content -->
+    <main>
+        <div class="container">
+            <div class="content-card">
+                <h1>Harvest Data Entry</h1>
+
+                <div class="form-group">
+                    <label>Harvest Type</label>
+                    <select id="harvestType">
+                        <option value="">Select Harvest Type</option>
+                    </select>
+                    
+                    <div class="add-harvest">
+                        <input type="text" id="newHarvest" placeholder="Add new harvest type">
+                        <button id="addHarvestBtn">
+                            <i data-lucide="plus"></i>
+                            Add
+                        </button>
+                    </div>
+                </div>
+
+                <div class="form-group">
+                    <label>Area</label>
+                    <select id="area">
+                        <option value="">Select Area</option>
+                        <option value="Ampara">Kaluthara</option>
+                        <option value="Mahanuwara">Colombo</option>
+                        <option value="Mathale">Gampaha</option>
+                        <option value="Nuwara Eliya">Rathnaputa </option>
+                        <option value="North Field">Kegalla</option>
+                        <option value="South Field">Badulla</option>
+                        <option value="East Field">monaragala</option>
+                        <option value="West Field">Madakalpu</option>
+                        <option value="North Field">Thrikunamalaya</option>
+                        <option value="South Field">Hambanthota</option>
+                        <option value="East Field">Galle</option>
+                        <option value="West Field">Mathara</option>
+                        <option value="North Field">Puththalama</option>
+                        <option value="South Field">Kurunegala</option>
+                        <option value="East Field">Anuradhapura</option>
+                        <option value="West Field">Polonnaruwa</option>
+                        <option value="North Field">Jaffna</option>
+                        <option value="South Field">Kilinochchi</option>
+                        <option value="East Field">Mulathiw</option>
+                        <option value="West Field">Vavuniya</option>
+                        <option value="North Field">Mannarama</option>
+                        <option value="South Field">Kandy</option>
+                        <option value="East Field">Mathale</option>
+                        <option value="West Field">Nuwara Eliya</option>
+
+                    </select>
+                </div>
+
+                <div class="form-group">
+                    <label>Amount (kg)</label>
+                    <input type="number" id="amount" placeholder="Enter amount">
+                </div>
+
+                <button id="saveSession" class="save-button">
+                    <i data-lucide="save"></i>
+                    Save Session
+                </button>
+
+                <div id="sessions" class="sessions-container hidden">
+                    <h2>
+                        <i data-lucide="list"></i>
+                        Saved Sessions
+                    </h2>
+                    <div id="sessionsList" class="sessions-list"></div>
+                </div>
+
+                <button id="submitData" class="submit-button">
+                    <i data-lucide="upload"></i>
+                    Submit All Data
+                </button>
+
+                <div id="review" class="review-container hidden">
+                    <h2>Data Review</h2>
+                    <div id="reviewList"></div>
+                    <p class="success-message">✓ Data successfully uploaded!</p>
+                </div>
+            </div>
+        </div>
+    </main>
+
+    <!-- Footer -->
+    <footer>
+        <div class="container">
+            <p>&copy;2024 AgMe. All rights reserved.</p>
+        </div>
+    </footer>
+
+    <script src="./assets/js/add_data.js"></script>
+</body>
+</html>

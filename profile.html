@@ -1,0 +1,134 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>User profile</title>
+    <link rel="stylesheet" href="./assets/css/profile.css">
+	<link href="https://unpkg.com/boxicons@latest/css/boxicons.min.css">
+    
+</head>
+<body>
+    <div class="profile-container">
+
+        <!-- User Information column-->
+
+         <div class ="profile-column">
+            <div class="user-card">
+
+                <div class="photo-container">
+                    <h2>profile</h2><br><br>
+                    <img src="./images/profilepic.jpg" alt="user photo" class="user-photo">
+                </div>
+
+				<div class="crop-card">
+                <h3>User4789789</h3>
+                <h4>Farmer & Crop Specialist</h4>
+                <p class="user-quote">"Commited to delivering the best harvest each season!"</p>
+				</div>
+
+                <div class="crop-card user-details">
+                    <p><strong>Name :</strong>user545452341</p><br>
+                    <p><strong>Address :</strong>No.45 hghjg ghh</p><br>
+                    <p><strong>Account :</strong>545645456</p><br>
+                    <p><strong>Age :</strong>25</p><br>
+                    <p><strong>Email :</strong><a href="mailto:user90@gmail.com">user90@gmail.com</a></p><br>
+                    <p><strong>Phone :</strong><a href="tel:0764598126">0764598126</a></p><br>
+                    <p><strong>Experience :</strong>10 years</p> <br>
+                </div>
+
+                <button class="btn-action" >View Full Profile</button>
+         </div>
+    </div>
+
+    <!--Crop Data Column-->
+
+    <div class="profile-column">
+
+        <div class="bio-section">
+            <h2>Current Details</h2><br><br>
+
+			<img src="./images/crop.jpg" alt="crop photo" class="user-photo">
+
+			<div class="crop-card">
+            <p> user545452341 specializes in wheat and corn production, maintaining sustainable farming practices. 
+                His crops are known for their high yield and quality, contributing significantly to local markets</p><br>               
+			</div>
+
+		</div>
+        
+        <div class="crop-card chart-section">
+
+        <h3>Top Crops</h3><br>
+
+            <div class="crops">  
+
+            <dl>
+
+                <dt><strong>Wheat</strong> </dt>
+                    <dd>- 60% of total yield<dd>
+                    <dd>- 70% of total Area<dd><br>
+                <dt><strong>Corn</strong></dt>
+                    <dd>- 30% of total yield</dd>
+                    <dd>- 20% of total Area</dd><br>
+                <dt><strong>Soybeans</strong></dt>
+                    <dd>- 20% of total yield</dd>
+                    <dd>- 10% of total Area</dd>
+
+            </dl>
+            </div>
+
+		</div>
+
+		<div class="user-card">
+            <button class="btn-action" onclick="window.location.href='add-data.html'">Add Crops</button>
+		</div>	
+        
+    </div>
+
+
+    <!-- Additional Insights Column -->
+
+    <div class="profile-column">
+	    <div class="bio-section">
+	        <h2 id="insight-heading">Additional Insights</h2><br><br>
+     
+	        <img src="./images/insight.jpg" alt="Additional insight photo" class="user-photo ">
+	    </div>
+
+        <div class="insight-card goals">
+            <h3>Goals</h3>
+            <ul>
+                <li>Increase sustainability by 20%</li>
+                <li>Adopt AI-based yield prediction</li>
+            </ul>
+        </div>
+
+        <div class="insight-card challanges">
+            <h3>Challanges</h3>
+            <ul>
+                <li>Unpredictable weather patterns</li>
+                <li>Market price volatility</li>
+            </ul>
+        </div>
+
+		<div class="insight-card challanges">
+            <h3>Tips</h3>
+            <ul>
+                <li>Be aware of your crew's location</li>
+                <li>Be mental health conscious</li>
+            </ul>
+        </div>
+        
+        <br><br>
+		
+        <div class="user-card">
+            <button class="btn-action">View More</button>
+		</div>
+	</div>
+
+
+    <script src="./assets/js/profile.js"></script>
+
+</body>
+</html>

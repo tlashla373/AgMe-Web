@@ -1,0 +1,99 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>AgMe - View Data by District</title>
+    <link rel="stylesheet" href="./assets/css/graph.css">
+    
+    
+</head>
+<body>
+    <div class="hero">
+        <nav>
+            <img src="./images/logo2.png" class="logo">
+            <button class="home-button" onclick="window.location.href='index.html'">
+              <i data-lucide="home"></i>
+              <span>Home</span>
+          </button>
+        </nav>
+    </div>
+    <div class="head">
+      <div class="year-selection">
+        <label for="year">Select Year:</label>
+        <select id="year" name="year">
+            <option value="2023">2025</option>
+            <option value="2022">2024</option>
+            <option value="2021">2023</option>
+            <option value="2020">2022</option>
+            <!-- Add more years as needed -->
+        </select>
+      </div>
+      <div class="header">
+        <h1>Graphical Representation of Crop Harvest</h1>
+      </div>
+
+    </div>
+    
+
+    <div class="main-container">
+
+      <div class="crop-stats">
+        <div class="crop-group">
+            <div id="1" class="bar1 "></div>
+            <p class="crop">crop1</p>
+            <p class="crop"></var></p>
+        </div>
+        <div class="crop-group">
+            <div id="2" class="bar2"></div>
+            <p class="crop">crop2</p>
+        </div>
+        <div class="crop-group">
+            <div id="3" class="bar3"></div>
+            <p class="crop">crop3</p>
+        </div>
+        <div class="crop-group">
+            <div id="4" class="bar4"></div>
+            <p class="crop">crop4</p>
+        </div>
+        <div class="crop-group">
+            <div id="5" class="bar5"></div>
+            <p class="crop">crop5</p>
+        </div>       
+      </div>
+
+
+      <div class="stats-info">
+        <div class="donut" style="--first: .40; --second: .33; --third: .12; --fourth: .08; --fifth: 0.07">
+                <div class="donut__slice donut__slice__first"></div>
+                <div class="donut__slice donut__slice__second"></div>
+                <div class="donut__slice donut__slice__third"></div>
+                <div class="donut__slice donut__slice__fourth"></div>
+                <div class="donut__slice donut__slice__fifth"></div>
+                <div class="donut__label">
+                  <div class="donut__label__heading">
+                      Year 2025
+                  </div>
+                  <div class="donut__label__sub">
+                      Harvest precentage
+                  </div>
+                </div>
+        </div>
+      </div>
+
+
+    </div>
+    
+    <div class="detailed-view">
+      <a href="#">Detailed View</a>
+    </div>
+
+    <footer>
+      <div class="footer">
+          <p>© 2025 All rights reserved.</p>
+      </div>
+  </footer>
+
+</body>
+
+</html>

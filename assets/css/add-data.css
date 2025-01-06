@@ -1,0 +1,226 @@
+/* Reset and base styles */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, sans-serif;
+    min-height: 100vh;
+    display: flex;
+    flex-direction: column;
+    background-color: #111827;
+}
+
+.container {
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 0 1rem;
+}
+
+/* Navigation */
+nav {
+    background-color: #1f2937;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+}
+
+.nav-content {
+    height: 4rem;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.logo-section {
+    display: flex;
+    align-items: center;
+    gap: 1rem;
+}
+
+.logo-icon {
+    width: 2rem;
+    height: 2rem;
+    color: #22c55e;
+}
+
+.logo-text {
+    font-size: 1.25rem;
+    font-weight: bold;
+    color: white;
+}
+
+.home-button {
+    display: flex;
+    align-items: center;
+    gap: 0.5rem;
+    padding: 0.5rem 1rem;
+    background-color: #374151;
+    border: none;
+    border-radius: 0.5rem;
+    color: white;
+    cursor: pointer;
+    transition: background-color 0.2s;
+}
+
+.home-button:hover {
+    background-color: #4b5563;
+}
+
+/* Main Content */
+main {
+    flex: 1;
+    padding: 2rem 0;
+    background-image: url('https://images.unsplash.com/photo-1464226184884-fa280b87c399?ixlib=rb-4.0.3');
+    background-size: cover;
+    background-position: center;
+    background-blend-mode: overlay;
+    background-color: rgba(17, 24, 39, 0.9);
+}
+
+.content-card {
+    max-width: 48rem;
+    margin: 0 auto;
+    padding: 2rem;
+    background-color: rgba(31, 41, 55, 0.75);
+    backdrop-filter: blur(8px);
+    border-radius: 0.5rem;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+}
+
+h1 {
+    font-size: 1.875rem;
+    font-weight: bold;
+    text-align: center;
+    margin-bottom: 2rem;
+    color: white;
+    text-transform: uppercase;
+}
+
+/* Form Elements */
+.form-group {
+    margin-bottom: 1.5rem;
+}
+
+label {
+    display: block;
+    margin-bottom: 0.5rem;
+    color: white;
+}
+
+select, input {
+    width: 100%;
+    padding: 0.5rem 1rem;
+    background-color: #374151;
+    border: none;
+    border-radius: 0.375rem;
+    color: white;
+    margin-bottom: 0.5rem;
+}
+
+select:focus, input:focus {
+    outline: 2px solid #3b82f6;
+}
+
+.add-harvest {
+    display: flex;
+    gap: 0.5rem;
+}
+
+button {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 0.5rem;
+    padding: 0.5rem 1rem;
+    border: none;
+    border-radius: 0.375rem;
+    cursor: pointer;
+    transition: background-color 0.2s;
+    color: white;
+}
+
+#addHarvestBtn {
+    background-color: #22c55e;
+}
+
+#addHarvestBtn:hover {
+    background-color: #16a34a;
+}
+
+.save-button {
+    width: 100%;
+    background-color: #3b82f6;
+}
+
+.save-button:hover {
+    background-color: #2563eb;
+}
+
+.submit-button {
+    width: 100%;
+    margin-top: 2rem;
+    background-color: #22c55e;
+}
+
+.submit-button:hover {
+    background-color: #16a34a;
+}
+
+/* Sessions */
+.sessions-container {
+    margin-top: 2rem;
+}
+
+.sessions-container h2 {
+    display: flex;
+    align-items: center;
+    gap: 0.5rem;
+    font-size: 1.25rem;
+    color: white;
+    margin-bottom: 1rem;
+}
+
+.session-item {
+    background-color: #374151;
+    padding: 1rem;
+    border-radius: 0.375rem;
+    margin-bottom: 0.75rem;
+    color: white;
+}
+
+/* Review Section */
+.review-container {
+    margin-top: 2rem;
+    padding: 1.5rem;
+    background-color: #374151;
+    border-radius: 0.375rem;
+}
+
+.review-container h2 {
+    color: white;
+    margin-bottom: 1rem;
+}
+
+.review-item {
+    padding: 0.5rem 0;
+    border-bottom: 1px solid #4b5563;
+    color: white;
+}
+
+.success-message {
+    margin-top: 1rem;
+    color: #22c55e;
+}
+
+/* Footer */
+footer {
+    background-color: #1f2937;
+    color: white;
+    padding: 1rem 0;
+    text-align: center;
+}
+
+.hidden {
+    display: none;
+}
